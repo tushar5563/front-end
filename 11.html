@@ -1,0 +1,194 @@
+<DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="style.css" <title>My Restaurant</title>
+    </head>
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#rot{
+    transform: rotate(20deg);
+}
+#grad1{
+    /*height:200px; */
+    background-color:red;
+    background-image: linear-gradient(blue,yellow);
+    background-image: conic-gradient(red,yellow,orange);
+}
+#grad2{
+    /*height:200px; */
+    background-color:red;
+    background-image: linear-gradient(black,red);
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+nav a:hover{
+    color: #ffcc00;
+}
+main{
+    background-color: #eee;
+    padding: 50px;
+    text-align: center;
+}
+main h2{
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+main p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+main img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px #333;
+}
+
+/*menu section styles */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 50px;
+}
+.menu-item {
+    flex-basis: 30%;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px #999;
+    padding: 20px;
+    text-align: center;
+}
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.menu-item h3{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.menu-item p{
+    color: #666;
+    font-size: 16px;
+    line-height:1.5;
+}
+
+footer{
+    background-color:#333;
+    color:white ;
+    padding: 20px;
+    text-align: center;
+}
+footer p{
+    font-size: 14px;
+    margin: 0;
+}
+
+header{
+    background: linear-gradient(to bottom,#333 0%,#666 100%);
+}
+nav a:hover{
+    background: linear-gradient(to bottom,#ffcc00 0%,#ff9900 100%);
+}
+section{
+    background: radial-gradient(circle,#fff 0%,#eee 100%);
+}
+.menu-item:hover{
+    background: linear-gradient(to bottom,#eee 0%,#fff 100%);
+    transform: translateY(-5px);
+}
+footer{
+    background: linear-gradient(to bottom,#666 0%,#333 100%);
+}
+    </style>
+    <body>
+        <header>
+            <h1>Welcome to My Restaurant</h1>
+            <nav>
+                <a href="#h1">Home</a>
+                <a href="#m1">Menu</a>
+                <a href="#c1">Contact us</a>
+            </nav>
+        </header>
+    
+        <main>
+            <div id="grad2">
+                <h2>About Us</h2>
+                <p>
+                    My Restaurant is a new restaurant opening soon in your city. Our
+                    mission is to provide our customers with delicious food and excellent service in a comfortable and
+                    friendly environment
+                </p>
+                <img src="https://th.bing.com/th/id/OIP.1RPGAeyLU3DAa8M9zEm6ggHaE7?pid=ImgDet&rs=1" alt="Restaurant Image">
+                />
+            </div>
+        </main>
+        <h2 id="m1">MENU</h2>
+        <section>
+            <div class="menu-item">
+                <img src="https://th.bing.com/th/id/OIP.jp1Pe7RoQW1zXlSUATRYeQHaEo?w=261&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                    alt="menu item 1">
+                />
+                <h3>pizza</h3>
+                <p>
+                    if you are a vegetarian,you'll love dominos veg extravaganza,Indi Tandoori paneer,and Mexican green
+                    wave.for non-vegetarians, non veg supreme,chicken fiesta, and indi chicken tikka top the list. thought
+                    these are the most loved dominos pizzas along with the cheesy
+                    Margherita pizza, you should check out the dominos menu to see what you like the most.
+                </p>
+            </div>
+            <div class="menu-item">
+                <img src="img/R.jpg"
+                alt="menu-item 2" />
+            <h3>Burger</h3>
+            <p>
+                Nine different types of burgers to make turkey burger....portobello mushroom burger....veegie
+                burger...wild salmon burger.... bean burger...cheeseburger
+            </p>
+        </div>
+        <div class="menu-item">
+            <img src="img/a4.jpg"
+            alt="menu items 3" />
+            <h3>pasta</h3>
+            <p>
+                here are some popular pasta dishes you might consider:spaghetti carbonare linguine with clam sause
+                fettucina alfredo penne alla vodka lasagna bucatina all'Amatriciana pappardelle with mushroom ragu
+                Rigotoni alla norma spaghetti aglio e olio (garlic and oil)
+            </p>
+
+        </div>
+    </section>
+    <section>
+        <div id="grad1">
+            <h1 id="c1">contact us</h1>
+        </div>
+        <div id="rot">
+            <h1>feedback</h1>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 My Restaurant</p>
+    </footer>
+</body>
+
+</html>

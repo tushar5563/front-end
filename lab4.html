@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylehseet" href="style.css"/>
+</head>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        margin:0;
+        padding:0;
+    }
+    #rot{
+        transform:rotate(20deg);
+    }
+    #grad1{
+        background-color: red;
+        background-image: linear-gradient(blue,yellow);
+        background-image: conic-gradient(red,yellow,orange);
+    }
+    #grad2{
+        background-color: red;
+        background-image: linear-gradient(black,red);
+    }
+    header{
+        background-color: #833;
+        color: antiquewhite;
+        padding: 20px;
+
+    }
+    nav a:hover{
+        color:#ffcc80;
+
+    }
+    main h2{
+        color: #833;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    main img{
+        max: wdith 100px;
+        height: auto;
+        margin-top:20px;
+        box-shadow: 0px 0px 10px #333;
+
+    }
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #fff;
+        padding:50px;
+    }
+    .menu-item{
+        flex-basis:30%;
+        margin-bottom:50px;
+        box-shadow:0px 0px 10px #999;
+        padding:20px;
+        text-align:center;
+
+    }
+    .menu-item img
+    {
+        max-width:100%;
+        height:auto;
+        margin-bottom:20px;
+
+    }
+    .menu-item h3{
+        color: #333;
+        font-size:24px;
+        margin-bottom:10px;
+    }
+    .menu-item p {
+        color:#833;
+        font-size:16px;
+        line-height:1.5;
+    }
+    footer{
+        background-color#833;
+        color: white;
+
+    }
+</style>
+<header>
+    <h1>welcome to my restaurant</h1>
+    <nav>
+        <a href="#h1">home</a>
+        <a href="#h1">courses</a>
+        <a href="#h1">contact us</a>
+    </nav>
+</header>
+<main>
+    <div id="grad2">
+        <h2>about us</h2>
+        <p>
+            ggeeks for geeks is available for all the courses.which is easily available for alll the studentts 
+            to availall the services
+        </p>
+        <img src="img/geek.png" alt="geek"  />
+    </div>
+</main>
+<h2 id="m1">courses</h2>
+<section>
+    <div class="menu-item">
+        <img src="img/java.png" alt="courses" height="150"/>
+        <h3>java</h3>
+        <p>
+            Meaning of Java: Java is a multi-platform and network-centric programming language.
+             It is mainly used for developing Android Apps and Enterprise Software. 
+            2009, Oracle Corporation acquired Sun Microsystems and took ownership of 
+            three key Sun software assets: Java, Solaris, and MySQL.
+        </p>
+
+    </div>
+    <div class="menu-item">
+        <img src="img/python.jpg" alt="c#"/>
+        <h3>python</h3>
+        <p>
+            Python programming language (latest Python 3) is being 
+            used in web development, Machine Learning applications, along with all cutting edge technology in Software Industry. Python Programming Language is very well suited f
+            or Beginners, also for experienced programmers with other
+             programming languages like C++ and Java.
+        </p>
+    </div>
+    <div class="menu-item">
+        <img src="img/code.jpg" alt="cod"/>
+        <h3>code</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis non qui itaque laudantium perferendis iste molestiae iusto, beatae ipsum amet 
+            quam id at consectetur numquam, repudiandae tempora commodi nostrum!</p>
+    </div>
+</section>
+<section>
+    <div id="grad1">
+        <h1 id="c1">contact us</h1>
+    </div>
+    <div id="rot">
+        <h1>feedback</h1>
+    </div>
+</section>
+<body>
+    
+</body>
+</html>
